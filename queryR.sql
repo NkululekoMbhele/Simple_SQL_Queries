@@ -1,0 +1,1 @@
+select sum(case when country = 'USA' then 1 else 0 end) * 100 / count(*) AS percentUSA FROM offices

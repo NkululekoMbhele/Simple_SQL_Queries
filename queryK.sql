@@ -1,0 +1,1 @@
+SELECT  CO.orderNumber, status, priceEach, quantityOrdered, productName FROM orders AS CO INNER JOIN orderdetails AS COD ON CO.orderNumber = COD.orderNumber INNER JOIN products AS CP ON CP.productCode = COD.productCode WHERE productVendor = "Exoto Designs"

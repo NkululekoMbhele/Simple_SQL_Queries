@@ -1,0 +1,1 @@
+select x.country, x.officeCode as oneOffice, x.officeCode as otherOffice from offices as x cross join offices as y where x.officeCode < y.officeCode and x.country=y.country
